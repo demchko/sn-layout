@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { Box, Flex, Text, Divider, Button, Image, Grid } from "@chakra-ui/react";
-const like = '/post/like.svg';
-const comment = '/post/comment.svg';
-const watch = '/post/eye.svg';
 
 interface PostProps {
     isFirst: boolean;
@@ -66,20 +63,20 @@ const Post:React.FC<PostProps> = ({ isFirst }) => {
             <Flex alignItems='center' >
                <Flex bg='#333333' className='p-1 rounded-md' >
                     <Button>
-                        <Image objectFit='contain' src={like} className='mr-1' />
+                        <Image objectFit='contain' src='/post/like.svg' className='mr-1' />
                         <Text>2 100</Text>
                     </Button>
                </Flex>
                <Flex  bg='#333333' className='p-1 rounded-md ml-2' >
                     <Button>
-                        <Image objectFit='contain' src={comment} className='mr-1' />
+                        <Image objectFit='contain' src='/post/comment.svg' className='mr-1' />
                         <Text>43</Text>
                     </Button>
                </Flex>
             </Flex>
             <Flex  bg='#333333' className='p-1 rounded-md' >
                 <Button>
-                    <Image  objectFit='contain' className='mr-1' src={watch} />
+                    <Image  objectFit='contain' className='mr-1' src='/post/eye.svg' />
                     <Text>27 930</Text>
                 </Button>
             </Flex>
