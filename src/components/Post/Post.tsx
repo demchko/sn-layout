@@ -4,7 +4,11 @@ const like = '/post/like.svg';
 const comment = '/post/comment.svg';
 const watch = '/post/eye.svg';
 
-const Post = ({isFirst}) => {
+interface PostProps {
+    isFirst: boolean;
+  }
+
+const Post:React.FC<PostProps> = ({ isFirst }) => {
     const [showFullText, setShowFullText] = useState(false);
     const [buttonModal, setButtonModal] = useState(false);
     const [underlineAll, setUnderlineAll] = useState(true);
