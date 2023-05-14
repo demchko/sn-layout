@@ -3,7 +3,6 @@ import MainComponent from '@/components/MainComponent.tsx/MainComponent'
 import Sidebar from '@/components/Sidebar/Sidebar'
 import { Grid, Box, useMediaQuery } from '@chakra-ui/react'
 import Head from 'next/head'
-import Link from 'next/link'
 
 export default function Home() {
 

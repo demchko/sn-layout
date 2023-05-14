@@ -1,5 +1,4 @@
 import { Box, Button, Flex, Image, useMediaQuery, Text } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Sidebar = () => {
@@ -11,7 +10,6 @@ const Sidebar = () => {
     { id: 6, title: "Друзі", link: "/friends", img: "friend.svg" },
   ]);
 
-  const router = useRouter();
   const [isLargerThanPhone] = useMediaQuery("(min-width: 480px)");
   const [showMenu, setShowMenu] = useState(true);
 
@@ -33,7 +31,6 @@ const Sidebar = () => {
               <Image src={item.img} className="w-5 mr-1" />
               <Button
                 className="text-xl mt-2"
-                onClick={() => router.push(item.link)}
               >
                 {item.title}
               </Button>

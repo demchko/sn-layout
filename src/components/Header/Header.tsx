@@ -1,6 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import logo from "@/public/logo_dark.png";
+import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import Link from "next/link";
 
 const Header = () => {
@@ -17,7 +15,7 @@ const Header = () => {
         <Link href={'/'} >
           <Box my={10} mr={15} cursor={'pointer'}
           >
-            <Image src={logo} width={40} height={40} alt="Logo" />
+            <Image src={'logo_dark.png'} width={40} height={40} alt="Logo" />
           </Box>
         </Link>
         
