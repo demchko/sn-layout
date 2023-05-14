@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <Box bg="#222" h={{ base: "120px", md: "160px" }}>
+    <Box bg="#222" h={{ base: "120px", md: "160px" }} fontFamily="Open Sans">
       <Flex
         maxW="1200px"
         color="white"
