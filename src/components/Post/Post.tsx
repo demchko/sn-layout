@@ -69,7 +69,7 @@ const Post:React.FC<PostProps> = ({ isFirst }) => {
                </Flex>
                <Flex  bg='#333333' className='p-1 rounded-md ml-2' >
                     <Button>
-                        <Image objectFit='contain' src='/post/comment.svg' className='mr-1' />
+                        <Image objectFit='contain' src='comment.svg' className='mr-1' />
                         <Text>43</Text>
                     </Button>
                </Flex>
