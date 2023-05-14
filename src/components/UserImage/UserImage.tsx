@@ -2,7 +2,7 @@ import { Box, Flex, Text, Image, Button, Grid, AspectRatio } from "@chakra-ui/re
 
 const UserImage = () => {
   return (
-    <Box bg='#222222' className="m-1 rounded-md p-2" >
+    <Box bg='#222222' className="font-sans m-1 rounded-md p-2" >
       <AspectRatio ratio={5/7} className="rounded-md overflow-hidden">
         <Image src='https://pbs.twimg.com/profile_images/1510563022472888320/U8gI3rz__400x400.jpg' objectFit="cover" />
       </AspectRatio>

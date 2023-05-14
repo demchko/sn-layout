@@ -7,13 +7,13 @@ const UserInfo = () => {
   return (
     <Box bg='#222' className="rounded-md pt-1 pr-4 pl-4 pb-2" >
         <Flex justifyContent='space-between' alignItems='center' >
-            <Text className="text-2xl" >Артем Демітко</Text>
+            <Text className="font-sans text-2xl" >Артем Шевченко</Text>
             <Flex alignItems='center' >
               <Box className='w-3 h-3 rounded-md mr-1' bg='#0077FF' ></Box>
               <Text>online</Text>
             </Flex>
         </Flex>
-        <Text className="mt-1" >Хуйня, артем заїбався</Text>
+        <Text className="mt-1" >Мій однофамілець в свій час пас ягнята за селом...</Text>
         <Divider borderColor="#828282" border="2x" className="mt-3 mb-3" />
         <Box>
           {showMoreInfo && (
@@ -32,11 +32,11 @@ const UserInfo = () => {
           )}
           <Grid templateColumns='1fr 2fr' className="mt-3" >
             <Text>День народження:</Text>
-            <Text>20 квітня 1889 р.</Text>
+            <Text>2 червня 2005 р.</Text>
           </Grid>
           <Grid  templateColumns='1fr 2fr' className="mt-3" >
             <Text>Місто:</Text>
-            <Text>Браунау-на-Інні</Text>
+            <Text>Стрий</Text>
           </Grid>
           <Grid  templateColumns='1fr 2fr' className="mt-3" >
             <Text>Сайт:</Text>
