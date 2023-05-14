@@ -63,7 +63,7 @@ const Post:React.FC<PostProps> = ({ isFirst }) => {
             <Flex alignItems='center' >
                <Flex bg='#333333' className='p-1 rounded-md' >
                     <Button>
-                        <Image objectFit='contain' src='/post/like.svg' className='mr-1' />
+                        <Image objectFit='contain' src='like.svg' className='mr-1' />
                         <Text>2 100</Text>
                     </Button>
                </Flex>
@@ -76,7 +76,7 @@ const Post:React.FC<PostProps> = ({ isFirst }) => {
             </Flex>
             <Flex  bg='#333333' className='p-1 rounded-md' >
                 <Button>
-                    <Image  objectFit='contain' className='mr-1' src='/post/eye.svg' />
+                    <Image  objectFit='contain' className='mr-1' src='eye.svg' />
                     <Text>27 930</Text>
                 </Button>
             </Flex>
