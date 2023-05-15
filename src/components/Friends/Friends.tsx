@@ -16,18 +16,18 @@ const Friends = () => {
       <Text className="mt-1">2 пости</Text>
       <Divider borderColor="#828282" border="2x" className="mt-1 mb-2" />
       <Text>280 підписок</Text>
-      <Grid templateColumns="repeat(auto-fill, minmax(40px, 1fr))" gap={4}>
-        {friends.map((item) => (
-          <GridItem key={item.id} mb="4">
-            <Flex flexDirection="column" alignItems="center">
-              <Image className="w-10 h-10 rounded-full object-cover" src={item.img} />
-              <Text mt="2" whiteSpace="normal" textAlign="center">
-                Артем
-              </Text>
-            </Flex>
-          </GridItem>
-        ))}
-      </Grid>
+      <Flex flexWrap="wrap"  alignItems='flex-start'>
+  {friends.map((item) => (
+    <Box key={item.id} mb="4" mr="5" >
+      <Flex flexDirection="column" alignItems="center">
+        <Image className="w-12 h-12 rounded-full object-cover" src={item.img} />
+        <Text className="mt-1" textAlign="center">
+          Артем
+        </Text>
+      </Flex>
+    </Box>
+  ))}
+</Flex>
     </Box>
   );
 };
