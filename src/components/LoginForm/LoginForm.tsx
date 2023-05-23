@@ -68,7 +68,7 @@ export default function LoginForm() {
                     fontSize={'large'}
                   />
                   
-                  <ErrorMessage name="username" component={Text} color="red" />
+                  <ErrorMessage name="username" component={Text} />
                 </FormControl>
                 <FormControl mt={4}>
                   <Field
@@ -85,7 +85,7 @@ export default function LoginForm() {
                     fontSize={'large'}
                     type="password"
                   />
-                  <ErrorMessage name="password" component={Text} color="red" />
+                  <ErrorMessage name="password" component={Text} />
                 </FormControl>
                 <Button
                   w="305px"

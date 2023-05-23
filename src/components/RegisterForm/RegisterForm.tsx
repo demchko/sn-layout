@@ -86,7 +86,7 @@ export default function RegisterForm() {
                                             my={12}
                                             fontSize={'large'}
                                         />
-                                        <ErrorMessage name="username" component={Text} color={"red"} />
+                                        <ErrorMessage name="username" component={Text} />
                                     </FormControl>
                                     <FormControl>
                                         <Field
@@ -102,7 +102,7 @@ export default function RegisterForm() {
                                             my={12}
                                             fontSize={'large'}
                                         />
-                                        <ErrorMessage name="email" component={Text} color={"red"} />
+                                        <ErrorMessage name="email" component={Text} />
                                     </FormControl>
                                     <FormControl mt={4}>
                                         <Field
@@ -119,7 +119,7 @@ export default function RegisterForm() {
                                             fontSize={'large'}
                                             type="password"
                                         />
-                                        <ErrorMessage name="password" component={Text} color="red" />
+                                        <ErrorMessage name="password" component={Text}  />
                                     </FormControl>
                                     <Button
                                         w="305px"
