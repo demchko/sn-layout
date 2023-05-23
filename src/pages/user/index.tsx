@@ -20,9 +20,12 @@ export default function Home() {
       </Head>
       <Box>
         <Header />
-        <Link href='/user' >User</Link>
-        <Link href='/login' >Login</Link>
-        <Link href='/register' >Register</Link>
+        <chakra.div fontFamily="Open Sans">
+        <Grid templateColumns={isSmallerThanPhone ? "1fr" : "2fr 8fr"} className="pl-10 pt-3 pr-10">
+    <Sidebar />
+    <MainComponent />
+  </Grid>
+        </chakra.div>
       </Box>
     </>
   )
